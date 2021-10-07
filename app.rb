@@ -10,7 +10,9 @@ class Battle < Sinatra::Base
   configure :development do
     register Sinatra::Reloader
   end
-
+  get '/test' do
+    'Testing infrastructure working!'
+  end
   get '/' do
     erb :home
   end
